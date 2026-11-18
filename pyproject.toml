@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bacon"
+version = "0.0.1"
+
+# Explicitly tell setuptools which folders contain python code to install
+[tool.setuptools]
+packages = ["models", "noise_robust_cobras"]
