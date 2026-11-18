@@ -1,6 +1,8 @@
 # BACON
 Bayesian Active Clustering with Oracle Noise
 
+The codebase includedes NCOBRAS (code is from https://github.com/jonassoenen/noise_robust_cobras).
+
 # Installing
 ```
 # clone the repository
