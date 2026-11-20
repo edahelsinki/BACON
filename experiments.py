@@ -296,7 +296,7 @@ if __name__ == "__main__":
     if args.experiment == "compare":
         methods = [
             ClusterMethod("BACON", BACON, {"epsilon": noise_level, "budget": query_budget, "mode": "kmeans", "n_super_instances": 50, "knn": 6, "sample_eps": True}),
-            ClusterMethod("BACON-random", BACON, {"epsilon": noise_level, "budget": query_budget, "mode": "kmeans", "n_super_instances": 50, "knn": 6, "random_queries": True}),
+            ClusterMethod("BACON-random", BACON, {"epsilon": noise_level, "budget": query_budget, "mode": "kmeans", "n_super_instances": 50, "knn": 6, "sample_eps": True, "random_queries": True}),
             ClusterMethod("COBRAS", COBRAS, {"epsilon": noise_level, "max_queries": query_budget}),
             ClusterMethod("NCOBRAS", NCOBRAS, {"epsilon": noise_level, "max_queries": query_budget}),
             ClusterMethod("ACC", ACC, {"noise_level": noise_level, "max_queries": query_budget, "aquisition_function": "maxexp", "init_type":"kmeans", "n_super_instances": 50}),
